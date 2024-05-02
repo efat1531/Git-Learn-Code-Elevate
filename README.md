@@ -52,7 +52,6 @@ Those commands are for staging changes for commit
 
 This command is used to commit the changes into git local repository.
 
-
 ## Git Environment
 
 - `Working` Here the files looks like previous/last commit.
@@ -102,6 +101,62 @@ This command is used to check the git logs in one line with graph.
 
 ### Amending
 
-- > `git commit -am "Commit Message"` 
+- > `git commit --amend -m "Commit Message"`
 
 This command is used to ammend the last commit with new message.
+
+- > `git commit --amend --no-edit`
+
+This command is used to ammend the last commit without editing the commit message.
+
+### Hard Reset
+
+- > `git reset --hard HEAD`
+
+This command is used to hard reset the git repository.
+
+- > `git reset --hard filename`
+
+This command is used to hard reset the git repository with filename.
+
+### Soft Reset
+
+- > `git reset --soft HEAD`
+
+This command is used to soft reset the git repository.
+
+- > `git reset --soft filename`
+
+This command is used to soft reset the git repository with filename.
+
+## Branches
+
+Branches is the most powerful tool of git. It can use to create different version of code. Also many people can work on different features without any disturbance.
+
+- > `git branches`
+
+This allow us to see all the branches in the repository and at which branch I am working now with a star mark.
+
+### Copy a branch
+
+- > `git switch -c NAME`
+
+This command is used to copy a branch.
+
+### Create a branch
+
+- > `git checkout -b NAME`
+
+This command is used to create a branch.
+
+### Switch a branch
+
+- > `git checkout NAME`
+
+This command is used to switch a branch.
+
+### Delete a branch
+
+- > `git branch -d NAME`
+
+This command is used to delete a branch.
