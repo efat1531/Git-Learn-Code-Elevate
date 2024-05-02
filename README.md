@@ -160,3 +160,36 @@ This command is used to switch a branch.
 - > `git branch -d NAME`
 
 This command is used to delete a branch.
+
+## Stash and clean
+
+### Stash
+
+This is useful thing to store changes temporary and work on something else.
+
+- > `git stash`
+
+It will temporary store everything into a storage.
+
+- > `git stash list`
+
+To look whats been store in the stashes.
+
+- > `git stash apply`
+
+To apply a stash changes into the branch.
+
+- > `git stash pop`
+
+This will remove the stash from storage.
+
+### Clean
+
+- > `git clean -n`
+
+This will show the files that will be removed.
+
+- > `git clean -f`
+
+This will remove the files from the repository.
+
