@@ -65,4 +65,29 @@ This reposotory is only to see git commands
 
 # CodeElevates first day
 
-Learning how to work with git & github with my team. Wants to learn some advance topic together. I Will know about how to resolve conflict, open new branch. I know the daily use git commands.
+# Key Topics Covered
+
+## Resolving Git Conflicts
+
+1. Manually resolve the conflict in the file (e.g., `README.md`)
+2. Stage the resolved file using `git add README.md`
+3. Commit the resolved conflict with a descriptive message using `git commit -m "Resolve merge conflict in README.md"`
+4. Push the resolved conflict to the repository using `git push`
+
+## Git Stash
+
+1. Stashing allows you to store your current work in a temporary place, without committing it.
+2. This is useful when you need to switch to a different branch but don't want to commit your current changes.
+
+## Git Reset
+
+1. `git reset --hard <paste_your_head_value>` allows you to go back to a specific commit, discarding all the changes since that commit.
+2. The `<paste_your_head_value>` represents the commit hash or reference (e.g., `HEAD`, branch name) that you want to reset to.
+
+These are the main topics covered in the provided information, which includes:
+
+- Resolving Git conflicts
+- Using Git Stash
+- Resetting Git to a specific commit using `git reset --hard`
+
+
