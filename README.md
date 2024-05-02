@@ -162,13 +162,17 @@ This command is used to switch a branch.
 
 This command is used to delete a branch.
 
-# Git-Learn-Code-Elavate
+## Merge
 
-This reposotory is only to see git commands
+- > `git merge NAME`
 
-# CodeElevates first day
+This command is used to merge a branch.
 
-# Key Topics Covered
+## Rebase
+
+- > `git rebase NAME`
+
+This command is used to rebase a branch.
 
 ## Resolving Git Conflicts
 
@@ -192,5 +196,3 @@ These are the main topics covered in the provided information, which includes:
 - Resolving Git conflicts
 - Using Git Stash
 - Resetting Git to a specific commit using `git reset --hard`
-
-
