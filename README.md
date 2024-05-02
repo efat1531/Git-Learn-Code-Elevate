@@ -162,6 +162,38 @@ This command is used to switch a branch.
 
 This command is used to delete a branch.
 
+## Stash and clean
+
+### Stash
+
+This is useful thing to store changes temporary and work on something else.
+
+- > `git stash`
+
+It will temporary store everything into a storage.
+
+- > `git stash list`
+
+To look whats been store in the stashes.
+
+- > `git stash apply`
+
+To apply a stash changes into the branch.
+
+- > `git stash pop`
+
+This will remove the stash from storage.
+
+### Clean
+
+- > `git clean -n`
+
+This will show the files that will be removed.
+
+- > `git clean -f`
+
+This will remove the files from the repository.
+
 ## Merge
 
 - > `git merge NAME`
@@ -196,3 +228,33 @@ These are the main topics covered in the provided information, which includes:
 - Resolving Git conflicts
 - Using Git Stash
 - Resetting Git to a specific commit using `git reset --hard`
+
+## Git Hub
+
+### Connect to GitHub
+
+- > `git remote add origin BRANCH_REPOSITORY`
+
+This command connects local git to github.
+
+- > `git push origin BRANCH_NAME`
+
+This command push the current code into the branch.
+
+***Note***: If you are pushting the brach into first time use `git push --set-upstream origin BRANCH_NAME`
+
+- > `git pull`
+
+This command is used to pull the branch from the repository.
+
+- > `git pull origin BRANCH_NAME`
+
+This command is used to pull the branch from the repository.
+
+- > `git push -f`
+
+This command is used to push the branch to the repository.
+
+- > `git fetch`
+
+This command is used to fetch the branch from the repository.
