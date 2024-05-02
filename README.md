@@ -8,25 +8,25 @@ Git is a open source version control system.
 
 ### User Name
 
- > git config --global user.name "your name"
+ > `git config --global user.name "your name"`
 
 This command is used to setup your workspace user name globally for all of your git repositories.
 
 ### User Email
 
- > git config --global user.email "your email"
+ > `git config --global user.email "your email"`
   
 This command is used to setup your workspace user email globally for all of your git repositories.
 
 ## Git initialize
 
-> git init
+> `git init`
 
 This command is used to initialize your git repository.
 
 ## Git status
 
-> git status
+> `git status`
 
 This command is used to check the status of your git repository.
 
@@ -34,29 +34,24 @@ This command is used to check the status of your git repository.
 
 ### Stage the changes in the filename file for commit
 
-> git add `filename`
+> `git add filename`
 
 This command is used to stage the changes in the filename file for commit.
 
 ### Stage all changes in the directory
 
-- > git add --all
-- > git add -A
-- > git add .
+- > `git add --all`
+- > `git add -A`
+- > `git add .`
 
 Those commands are for staging changes for commit
 
 ## Git Commit
 
-> git commit -m "Commit Message"
+> `git commit -m "Commit Message"`
 
 This command is used to commit the changes into git local repository.
 
-### Special
-
-> git commit -am "Commit Message"
-
-This command stages all the changes and commit the changes into local repository.
 
 ## Git Environment
 
@@ -74,11 +69,11 @@ This command stages all the changes and commit the changes into local repository
 
 ## Restore files
 
-- > git restore -S `filename`
+- > `git restore -S filename`
 
 This command is used to restore the file from staging.
 
-- > git restore .
+- > `git restore .`
 
 This command is used to restore the directory to last commit. Note this cannot used to delete `Untracked Files`. We need to delete `Untracked Files` Manually.
 
@@ -87,5 +82,26 @@ This command is used to restore the directory to last commit. Note this cannot u
 - `.gitignore` file used to when we do not want to share some files to the repository.
 - This files ignores everything that is listed in the file.
 
-> If we use `.gitignore` file after few commits we might need to delete our cache. To delete cache we can use `git rm -r --cached .`. It will delete all the files added recursevily. If we still want to delete all the files from previous commits we can use this tool **[BFG Repo Cleanner](https://rtyley.github.io/bfg-repo-cleaner/)**.
+>***Note***: If we use `.gitignore` file after few commits we might need to delete our cache. To delete cache we can use `git rm -r --cached .`. It will delete all the files added recursevily. If we still want to delete all the files from previous commits we can use this tool **[BFG Repo Cleanner](https://rtyley.github.io/bfg-repo-cleaner/)**.
 
+## Git Logs
+
+- > `git log`
+
+This command is used to check the git logs. But if there are many logs it will be a mess. So a better command is
+
+- > `git log --oneline`
+
+This command is used to check the git logs but there is only 1 log per line, so it is easy to read.
+
+- > `git log --oneline --graph`
+
+This command is used to check the git logs in one line with graph.
+
+## Change History of git
+
+### Amending
+
+- > `git commit -am "Commit Message"` 
+
+This command is used to ammend the last commit with new message.
